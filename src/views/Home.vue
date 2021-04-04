@@ -48,7 +48,7 @@
             <video src="../video/poalab.mp4" type="video/mp4" autoplay="" muted="" loop=""></video>
             <div class="ptext-wrapper">
             <img alt="logo da rede fab lab" src="../assets/poalab/logo.svg">
-            <h1>POALAB</h1>
+            <h1 class="title">POALAB</h1>
             <h3>Atenção!<br> Estamos Mudando de sala!<br>Continuaremos no campus Porto Alegre do IFRS
               <br> voltamos em breve</h3>
               <br><br><br><br><br><br>
@@ -93,6 +93,7 @@
 }
 
 .ContentTitle {
+    background-color: white;
     width: 100%;
     height: 200px;
 }
@@ -104,6 +105,12 @@
 .ptext-wrapper {
      width:100%;
      position: relative;
-     margin-top: -55%;
+     margin-top: -66%;
+     color: blue;
+}
+
+.title{
+    font-size: 600%;
+    color: red;
 }
 </style>
