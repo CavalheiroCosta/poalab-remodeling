@@ -1,5 +1,7 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+<v-main>
+      <v-container class="py-8 px-6" fluid>
+        <p>teste teste teste</p> <p>teste teste teste</p> <p>teste teste teste</p>
+       </v-container>
+    </v-main>
 </template>

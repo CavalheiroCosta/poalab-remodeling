@@ -1,4 +1,4 @@
-<template>
+<!--<template>
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
@@ -6,9 +6,17 @@
     </div>
     <router-view/>
   </div>
+</template>-->
+<template>
+<div id="app">
+    <router-view/>
+</div>
 </template>
 
 <style>
+@import "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900";
+@import "https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
