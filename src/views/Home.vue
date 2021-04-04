@@ -42,32 +42,68 @@
     </v-navigation-drawer>
 
     <v-main>
-      <v-container class="py-8 px-6" fluid>
-        <video-bg :sources="['../vids/poalab.mp4']" >
-         video
-        </video-bg>
-        <p>teste teste teste</p> <p>teste teste teste</p> <p>teste teste teste</p>
+      <v-container class="container py-8 px-6" fluid>
+        <v-card>
+          <div class="pcontent-wrapper">
+            <video src="../video/poalab.mp4" type="video/mp4" autoplay="" muted="" loop=""></video>
+            <div class="ptext-wrapper">
+            <img alt="logo da rede fab lab" src="../assets/poalab/logo.svg">
+            <h1>POALAB</h1>
+            <h3>Atenção!<br> Estamos Mudando de sala!<br>Continuaremos no campus Porto Alegre do IFRS
+              <br> voltamos em breve</h3>
+              <br><br><br><br><br><br>
+            </div>
+          </div>
+          <!--<video src= type="video/mp4" autoplay="" muted="" loop=""> </video>
+          <v-subheader class="contentTitle"><h1>POALAB</h1></v-subheader>
+                  <div class="text">txt</div>
+                 <p>teste teste teste</p> <p>teste teste teste</p> <p>teste teste teste</p>-->
+
+        </v-card>
        </v-container>
     </v-main>
   </v-card>
 </template>
 
-<script>
-  import VideoBg from 'vue-videobg'
-  
+<script>  
   export default {
-    components: { VideoBg },
     data () {
       return {
         drawer: false,
         mini: true,
         items: [
-          { title: 'Home', redirect: '/', icon: 'mdi-home-city' },
-          { title: 'My Account', redirect: '', icon: 'mdi-account' },
-          { title: 'Users', icon: 'mdi-account-group-outline' },
+          { title: 'Inicio', redirect: '/', icon: 'mdi-home-city' },
+          { title: 'Espaço', redirect: '/place', icon: 'mdi-map-marker' },
+          { title: 'Equipamentos', redirect: '/machinary', icon: 'mdi-hammer-wrench' },
+          { title: 'Open Day', redirect: '/openday', icon: 'mdi-brain' },
+          { title: 'Calendário', redirect: '/calendar-month', icon: 'mdi-calendar' },
+          { title: 'Canais e Links', redirect: '/channels', icon: 'mdi-tag-faces' },
         ],
       }
     },
   }
 </script>
 
+<style scoped>
+.container{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.ContentTitle {
+    width: 100%;
+    height: 200px;
+}
+
+.pcontent-wrapper video{
+    width:100%;
+}
+
+.ptext-wrapper {
+     width:100%;
+     position: relative;
+     margin-top: -55%;
+}
+</style>
