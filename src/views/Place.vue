@@ -54,8 +54,6 @@
                 Porto Alegre - RS
                 CEP: 90030-041
               </span>
-            </v-card>
-            <v-card>
               <v-subheader></v-subheader>
               <v-row>
                 <v-col

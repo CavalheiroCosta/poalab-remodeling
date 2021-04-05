@@ -44,10 +44,11 @@
     <v-main>
       <v-container class="py-8 px-6" fluid>
          <v-card>
-              <h1 class="title">Equipamentos</h1>
-            </v-card>
+              <h1 class="title">Nosso Calendário</h1>
          <v-row class="fill-height">
+           
     <v-col>
+      <v-subheader>Contato: poalabifrs@gmail.com</v-subheader>
       <v-sheet height="64">
         <v-toolbar
           flat
@@ -177,6 +178,7 @@
       </v-sheet>
     </v-col>
   </v-row>
+              </v-card>
       </v-container>
     </v-main>
   </v-card>

@@ -47,8 +47,6 @@
           <v-col>
             <v-card>
               <h1 class="title">Equipamentos</h1>
-            </v-card>
-            <v-card>
               <v-subheader></v-subheader>
               <v-row>
                 <v-col
