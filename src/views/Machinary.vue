@@ -93,11 +93,11 @@
         mini: true,
         items: [
           { title: 'Inicio', redirect: '/', icon: 'mdi-home-city' },
+          { title: 'Sobre(Open Day)', redirect: '/openday', icon: 'mdi-brain' },
           { title: 'Espaço', redirect: '/place', icon: 'mdi-map-marker' },
           { title: 'Equipamentos', redirect: '/machinary', icon: 'mdi-hammer-wrench' },
-          { title: 'Open Day', redirect: '/openday', icon: 'mdi-brain' },
-          { title: 'Calendário', redirect: '/calendar-month', icon: 'mdi-calendar' },
           { title: 'Canais e Links', redirect: '/channels', icon: 'mdi-tag-faces' },
+          { title: 'Calendário', redirect: '/calendar-month', icon: 'mdi-calendar' },
         ],
         images:[
           {key: '1', path: image1 , tittle:'IMPRESSORAS 3D WANHOA', model: 'Duplicator 4', quantity: '2', 
