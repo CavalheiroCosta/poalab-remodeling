@@ -132,7 +132,6 @@ import nativos from '../assets/poalab/channels/nativos.svg';
 .card-image{
     max-width: 100%;
     max-height: 100%;
-    display: block; /* remove extra space below image */
     text-align: center;
     padding-left: 10%;
 }
