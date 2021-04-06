@@ -43,13 +43,49 @@
 
     <v-main>
       <v-container class="py-8 px-6" fluid>
+         <v-row>
+          <v-col>
+            <v-card>
+              <h1 class="title">Canais e Links Úteis</h1>
+              <span>Coordenação: André Peres <b>andre.peres@poa.ifrs.edu.br</b></span>
+              <v-subheader></v-subheader>
+              <v-row>
+                <v-col
+                  v-for="image in images"
+                  :key="image.key"
+                  cols="3"
+                >
+                  <div class="card-tool">
+                  <a :href="image.redirect"><img class="card-image" :src="image.path"></a>
+                  </div>
+                </v-col>
+              </v-row>
+            </v-card>
+          </v-col>
+        </v-row>
       </v-container>
     </v-main>
   </v-card>
 </template>
 
 <script>
-  
+import facebook from '../assets/poalab/channels/facebook.png';
+import youtube from '../assets/poalab/channels/youtube.png';
+import braile from '../assets/poalab/channels/braille.png';
+import thingverse from '../assets/poalab/channels/thingiverse.png';
+import instructables from '../assets/poalab/channels/InstructablesRobot.png';
+import opendesk from '../assets/poalab/channels/opendesk.png';
+import fabacademy from '../assets/poalab/channels/fabacademy.png';
+import fabfoundation from '../assets/poalab/channels/fabfoundation.png';
+import fabcity from '../assets/poalab/channels/fabcity.png';
+import make from '../assets/poalab/channels/make.png';
+import tinkercad from '../assets/poalab/channels/tinkercad.png';
+import inkscape from '../assets/poalab/channels/inkscape.png';
+import makercase from '../assets/poalab/channels/makercase.png';
+import rbac from '../assets/poalab/channels/rbac.png';
+import makerpoa from '../assets/poalab/channels/makepoa.png';
+import nativos from '../assets/poalab/channels/nativos.svg';
+
   export default {
     data () {
       return {
@@ -63,8 +99,57 @@
           { title: 'Canais e Links', redirect: '/channels', icon: 'mdi-tag-faces' },
           { title: 'Calendário', redirect: '/calendar-month', icon: 'mdi-calendar' },
         ],
+        images:[
+          {key: '01', path: facebook, redirect:'https://www.facebook.com/poalab'  },
+          {key: '02', path: youtube, redirect:'https://www.youtube.com/channel/UCWZzR8M4KKD6l7hpOZb9viA' },
+          {key: '03', path: braile, redirect:'https://cta-ifrs.github.io/Text2Braille3d/'},
+          {key: '04', path: thingverse, redirect:'https://www.thingiverse.com/'  },
+          {key: '05', path: instructables, redirect:'https://www.instructables.com/' },
+          {key: '06', path: opendesk, redirect:'https://www.opendesk.cc/' },
+          {key: '07', path: fabacademy, redirect:'http://fabacademy.org/'  },
+          {key: '08', path: fabfoundation, redirect:'http://www.fabfoundation.org/'  },
+          {key: '09', path: fabcity, redirect:'https://fab.city/' },
+          {key: '10', path: make, redirect:'https://makezine.com/' },
+          {key: '11', path: tinkercad, redirect:'https://www.tinkercad.com/'  },
+          {key: '12', path: inkscape, redirect:'https://inkscape.org/pt-br/'  },
+          {key: '13', path: makercase, redirect:'http://www.makercase.com/' },
+          {key: '14', path: rbac, redirect:'http://aprendizagemcriativa.org/' },
+          {key: '15', path: makerpoa, redirect:'https://portoalegre.makerfaire.com/'  },
+          {key: '16', path: nativos, redirect:'https://www.poalab.net.br/fabbernatives/' },
+        ],
       }
     },
   }
 </script>
 
+<style scoped>
+.title{
+    background-color: white;
+    font-size: 600%;
+    color: red;
+}
+
+.card-image{
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+    text-align: center;
+    padding-left: 10%;
+}
+.logo{
+    /*border: 1px solid gray;*/
+}
+
+.card-tool{
+    width: 50%;
+    height: 50%;
+    float: left;
+    font-size: 1rem;
+    font-family: 'Gruppo';
+    flex:1;
+    margin-left: 15%;
+    text-align: center;
+    align-self: center;
+
+}
+</style>
