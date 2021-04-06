@@ -69,22 +69,22 @@
 </template>
 
 <script>
-import facebook from '../assets/poalab/channels/facebook.png';
-import youtube from '../assets/poalab/channels/youtube.png';
-import braile from '../assets/poalab/channels/braille.png';
-import thingverse from '../assets/poalab/channels/thingiverse.png';
-import instructables from '../assets/poalab/channels/InstructablesRobot.png';
-import opendesk from '../assets/poalab/channels/opendesk.png';
-import fabacademy from '../assets/poalab/channels/fabacademy.png';
-import fabfoundation from '../assets/poalab/channels/fabfoundation.png';
-import fabcity from '../assets/poalab/channels/fabcity.png';
-import make from '../assets/poalab/channels/make.png';
-import tinkercad from '../assets/poalab/channels/tinkercad.png';
-import inkscape from '../assets/poalab/channels/inkscape.png';
-import makercase from '../assets/poalab/channels/makercase.png';
-import rbac from '../assets/poalab/channels/rbac.png';
-import makerpoa from '../assets/poalab/channels/makepoa.png';
-import nativos from '../assets/poalab/channels/nativos.svg';
+import facebook from '../assets/poalab/facebook.png';
+import youtube from '../assets/poalab/youtube.png';
+import braile from '../assets/poalab/braille.png';
+import thingverse from '../assets/poalab/thingiverse.png';
+import instructables from '../assets/poalab/InstructablesRobot.png';
+import opendesk from '../assets/poalab/opendesk.png';
+import fabacademy from '../assets/poalab/fabacademy.png';
+import fabfoundation from '../assets/poalab/fabfoundation.png';
+import fabcity from '../assets/poalab/fabcity.png';
+import make from '../assets/poalab/make.png';
+import tinkercad from '../assets/poalab/tinkercad.png';
+import inkscape from '../assets/poalab/inkscape.png';
+import makercase from '../assets/poalab/makercase.png';
+import rbac from '../assets/poalab/rbac.png';
+import makerpoa from '../assets/poalab/makepoa.png';
+import nativos from '../assets/poalab/nativos.svg';
 
   export default {
     data () {
