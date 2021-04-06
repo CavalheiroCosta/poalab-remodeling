@@ -136,9 +136,6 @@ import nativos from '../assets/poalab/channels/nativos.svg';
     text-align: center;
     padding-left: 10%;
 }
-.logo{
-    /*border: 1px solid gray;*/
-}
 
 .card-tool{
     width: 50%;
